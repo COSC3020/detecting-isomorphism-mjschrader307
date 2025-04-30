@@ -24,7 +24,7 @@ I did a lot of research on this problem, since I did a lot of pondering and coul
 
 - Create an array similar to the `range(n)` iterator in Python ($\Theta(|V|)$)
 - Create an array of permutations of that array ($\Theta(|V|!)$)
-- Each permutation represents a pair of transformations to the second graph:
+- Each permutation represents a pair of transformations (the same transformation twice) to the second graph:
   - `perm[i]` represents both H's new row position and column position.
   - This should result in a copy of the first graph if there exists a "perfect" permutation (indicator of isomorphism)
     - The only differences at that point would be the labeling of vertices
