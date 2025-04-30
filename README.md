@@ -20,7 +20,7 @@ What is the worst-case big $\Theta$ time complexity of your algorithm?
 
 Answer:
 
-I did a lot of research on this problem, since I did a lot of pondering and could not come up with a good idea for it. The general consensus seemed to be that there is no good-size-fits-all solution to detecting isomorphism in two graphs. The most reliable solution I thought of was to use a brute force approach:
+I did some research on this problem, since I did a lot of pondering and could not come up with a good idea for it. The general consensus seemed to be that there is no good-size-fits-all solution to detecting isomorphism in two graphs. The most reliable solution I thought of was to use a brute force approach:
 
 - Create an array similar to the `range(n)` iterator in Python ($\Theta(|V|)$)
 - Create an array of permutations of that array ($\Theta(|V|!)$)
@@ -37,6 +37,10 @@ That results in a final runtime complexity of $\Theta(|V|^2|V|!)$
 This algorithm for detecting isomorphism, though it is guaranteed to find the correct answer, is quite inefficient. It actually gets to be horribly inefficient for even medium-sized graphs. When graphs increase in size, this algorithm gets to be infeasible because of the factorial complexity of generating permutations of vertex arrangements for the adjacency matrix.
 
 ---
+
+I watched a couple Youtube videos to hear things explained differently and see a couple examples
+- [Isomorphisms and Bipartite Graphs](https://m.youtube.com/watch?v=W9nJRN3ajuk&pp=0gcJCYQJAYcqIYzv)
+- [Discrete Math Graph Isomorphisms](https://m.youtube.com/watch?v=Ymb2qaVgN58&t=1s)
 
 **I certify that I have listed all sources used to complete this exercise, including the use
 of any Large Language Models. All of the work is my own, except where stated
