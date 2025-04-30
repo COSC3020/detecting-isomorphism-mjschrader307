@@ -26,7 +26,7 @@ I did a lot of research on this problem, since I did a lot of pondering and coul
 - Create an array of permutations of that array ($\Theta(|V|!)$)
 - Each permutation represents a pair of transformations (the same transformation twice) to the second graph:
   - `perm[i]` represents both H's new row position and column position.
-  - This should result in a copy of the first graph if there exists a "perfect" permutation (indicator of isomorphism)
+  - Applying the "perfect" permutation of vertex arrangement in the adjacency matrix as a transformation to H's matrix, if it exists, should result in a copy of the first graph (indicator of isomorphism)
     - The only differences at that point would be the labeling of vertices
   - Rearranging of matrix elements happens in $\Theta(|V|^2)$ time, and this happens once per permuation of vertex arrangement in the adjacency matrix
 
